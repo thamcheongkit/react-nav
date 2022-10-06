@@ -1,0 +1,18 @@
+{
+  "name": "react-nav",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+  },
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+     
+    "nx": "14.8.3",
+    "@nrwl/cli": "14.8.3",
+    "@nrwl/workspace": "14.8.3",
+    "typescript": "~4.8.2",
+    "prettier": "^2.6.2"
+  }
+}
