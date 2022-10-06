@@ -1,0 +1,42 @@
+.react-nav-panels {
+  transition: all 0.3s ease;
+  box-shadow: -3px -3px 5px rgba(82, 95, 127, 0.04);
+  height: 300px;
+  opacity: 0;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 5px;
+  position: relative;
+  pointer-events: none;
+  transform-origin: 50% -50px;
+  transform: rotateX(-15deg);
+}
+
+.react-nav-panels-enter {
+  opacity: 0;
+  transform: rotateX(-15deg);
+}
+
+.react-nav-panels-enter-active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: rotateX(0);
+}
+
+.react-nav-panels-enter-done {
+  opacity: 1;
+  pointer-events: auto;
+  transform: rotateX(0);
+}
+
+.react-nav-panels-exit {
+  opacity: 1;
+}
+
+.react-nav-panels-exit-active {
+  opacity: 0;
+}
+
+.react-nav-panels-exit-done {
+  opacity: 0;
+}

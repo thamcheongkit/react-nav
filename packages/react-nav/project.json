@@ -38,7 +38,7 @@
           }
         ],
         "format": ["esm", "cjs"],
-        "external": ["react"]
+        "external": ["react", "react-transition-group", "react-dom"]
       },
       "configurations": {
         "production": {

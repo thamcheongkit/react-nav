@@ -25,6 +25,7 @@ importers:
       '@types/node': 16.11.7
       '@types/react': 18.0.20
       '@types/react-dom': 18.0.6
+      '@types/react-transition-group': ^4.4.5
       '@typescript-eslint/eslint-plugin': ^5.36.1
       '@typescript-eslint/parser': ^5.36.1
       babel-jest: 28.1.1
@@ -78,6 +79,7 @@ importers:
       '@types/node': 16.11.7
       '@types/react': 18.0.20
       '@types/react-dom': 18.0.6
+      '@types/react-transition-group': 4.4.5
       '@typescript-eslint/eslint-plugin': 5.39.0_ewgwokumxye6uudhivp3ul3654
       '@typescript-eslint/parser': 5.39.0_oy7hgmlo6357d5kkcjbkfgtg4q
       babel-jest: 28.1.1_@babel+core@7.12.13
@@ -5819,6 +5821,12 @@ packages:
 
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+    dependencies:
+      '@types/react': 18.0.20
+    dev: true
+
+  /@types/react-transition-group/4.4.5:
+    resolution: {integrity: sha512-juKD/eiSM3/xZYzjuzH6ZwpP+/lejltmiS3QEzV/vmb/Q8+HfDmxu+Baga8UEMGBqV88Nbg4l2hY/K2DkyaLLA==}
     dependencies:
       '@types/react': 18.0.20
     dev: true

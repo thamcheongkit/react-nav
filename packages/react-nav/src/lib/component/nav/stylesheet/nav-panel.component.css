@@ -1,0 +1,29 @@
+.react-nav-panel {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.react-nav-panels-enter .react-nav-panel {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.react-nav-panels-enter-done .react-nav-panel {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.react-nav-panels-exit .react-nav-panel {
+  opacity: 0;
+}
+
+.react-nav-panels-exit-done .react-nav-panel {
+  opacity: 0;
+}

@@ -1,0 +1,4 @@
+.react-nav-panel-left {
+  transform: translateX(-150px);
+  opacity: 0 !important;
+}

@@ -1,0 +1,36 @@
+.react-nav-panels-arrow {
+  transform: rotate(45deg);
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  box-shadow: -3px -3px 5px rgba(82, 95, 127, 0.04);
+  transition: all 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.react-nav-panels-arrow-enter {
+  opacity: 0;
+}
+
+.react-nav-panels-arrow-enter-active {
+  opacity: 1;
+}
+
+.react-nav-panels-arrow-enter-done {
+  opacity: 1;
+}
+
+.react-nav-panels-arrow-exit {
+  opacity: 1;
+}
+
+.react-nav-panels-arrow-exit-active {
+  opacity: 0;
+}
+
+.react-nav-panels-arrow-exit-done {
+  opacity: 0;
+}
