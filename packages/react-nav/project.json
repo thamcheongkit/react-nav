@@ -19,6 +19,67 @@
         "jestConfig": "packages/react-nav/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "build": {
+      "executor": "@nrwl/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "main": "packages/react-nav/src/index.ts",
+        "outputPath": "dist/packages/react-nav",
+        "compiler": "babel",
+        "tsConfig": "packages/react-nav/tsconfig.lib.json",
+        "project": "packages/react-nav/package.json",
+        "assets": [
+          {
+            "glob": "packages/react-nav/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ],
+        "format": ["esm", "cjs"],
+        "external": ["react"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/react",
+        "port": 4400,
+        "config": {
+          "configFolder": "packages/react-nav/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/react",
+        "outputPath": "dist/storybook/react-nav",
+        "config": {
+          "configFolder": "packages/react-nav/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   }
 }
